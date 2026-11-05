@@ -1,46 +1,26 @@
-# ig-klima-idee – barrierefreier Oktober-Newsletter
+# IG Klima Kürten – Newsletter-Archiv
 
-Statische HTML-Fassung des IG-Klima-Kürten-Newsletters Oktober 2026 für GitHub Pages.
+Startseite mit Ablage der monatlichen Ausgaben. Oktober 2026 liegt unter `ausgaben/2026-10/`. Der Wortlaut dieser Ausgabe entspricht der Druckfassung v14.
 
-## Zweck
+Eine weitere Ausgabe wird ein Ordner `ausgaben/jahr-monat/index.html` und ein Eintrag in der Liste auf `index.html`.
 
-- Inhalt aus der freigegebenen Druckfassung (LaTeX/PDF v14), unverändert
-- Immer sichtbares Inhaltsverzeichnis (Sidebar Desktop, aufklappbare Navigation mobil)
-- Orientierung an WCAG 2.2 AA: Semantik, Kontrast, Tastatur, Fokus, Skip-Link, Screenreader-Landmarks
+## Seiten
 
-## Dateien
-
-- `index.html` – Seite mit allen Themen als Anker-Abschnitte
-- `css/styles.css` – Layout und Darstellung
-- `js/nav.js` – mobiles Menü (`aria-expanded`) und aktuelle Nav-Markierung
-- `img/` – Bilder aus dem Newsletter (`bild01.jpg` … `bild08.jpg`)
+- `index.html` – Archiv
+- `ausgaben/2026-10/` – Oktober 2026, mit Inhaltsverzeichnis
+- `impressum/`, `datenschutz/`, `streitschlichtung/`
+- `css/styles.css`, `js/nav.js`, `img/`
 
 ## Lokal ansehen
-
-Im Ordner dieser Site:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Dann im Browser `http://localhost:8080` öffnen.
+Dann `http://localhost:8080` öffnen.
 
-Alternativ `index.html` direkt öffnen (Navigation und Anker funktionieren auch so).
+## Veröffentlichung
 
-## GitHub Pages
+`git push igk2 main` aktualisiert https://dna-dieter.github.io/igk2/ .
 
-Repo: `dna-dieter/ig-klima-idee`. Inhalt dieses Ordners in den Branch für Pages legen (z. B. `main` Root oder `/docs`). In den Repo-Settings unter Pages die Quelle wählen. Veröffentlichen erst nach Freigabe durch den Owner.
-
-## Themen-Anker
-
-| ID | Thema |
-|----|--------|
-| `#editorial` | Editorial |
-| `#waermepumpenparty` | Wärmepumpen-party in Bechen |
-| `#e-auto-pv-speed-dating` | E-Auto- und Photovoltaik-Speed-Dating |
-| `#buergersolarberatung` | BürgerSolarBeratung in Kürten |
-| `#aktionsmonat-gebaeude` | Aktionsmonat Gebäude |
-| `#energiewende-zu-teuer` | Ist die Energiewende zu teuer? |
-| `#solar-boomt` | Solar boomt! Weltweit! |
-| `#todeskampf-industrie` | Todeskampf der Industrie hat begonnen |
-| `#gedenken-9-november` | Gedenken an die Opfer des 9. November |
+`git push` ohne Ziel schreibt nach `origin` (https://dna-dieter.github.io/ig-klima-idee/). Das ist die ältere Einzelseite, solange dieser Stand nicht dorthin geschoben wird.
